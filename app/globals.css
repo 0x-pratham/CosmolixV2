@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Cosmolix Brand Colors */
+  --color-cosmo-paper: #f9f6f1;
+  --color-cosmo-ink: #1d1a18;
+  --color-cosmo-accent: #d0661a;
+
+  /* Cosmolix Typography */
+  --font-sans: "Google Sans Flex", sans-serif;
+  --font-serif: "Times New Roman", serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Set the default Anthropic-style editorial canvas */
+@layer base {
+  body {
+    background-color: var(--color-cosmo-paper);
+    color: var(--color-cosmo-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: normal;
+  }
 }

@@ -216,9 +216,9 @@ export default function Footer() {
     setTilt({ x: normalizedY * -5, y: normalizedX * 5 });
   };
 
-  // Reusable Tailwind class for the Center-Out Underline hover effect
-  // 'origin-center' ensures it starts in the middle, 'scale-x-0' hides it by default, 'group-hover:scale-x-100' expands it to left and right
-  const underlineHoverClasses = "group relative w-fit text-cosmo-ink/70 hover:text-cosmo-ink text-sm transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[1px] after:bg-cosmo-ink after:origin-center after:scale-x-0 group-hover:after:scale-x-100 after:transition-transform after:ease-out after:duration-300";
+  // Base text/color classes for the links (removed the pseudo-element underline CSS)
+  const baseLinkClasses = "group relative inline-block w-fit text-cosmo-ink/70 hover:text-cosmo-ink text-sm transition-colors duration-300";
+  const flexLinkClasses = "group relative flex items-center gap-2 w-fit text-cosmo-ink/70 hover:text-cosmo-ink text-sm transition-colors duration-300";
 
   return (
     <footer ref={footerRef} className="relative bg-cosmo-paper border-t border-cosmo-ink/10 pt-16 md:pt-24 pb-6 px-6 md:px-12 lg:px-24 overflow-hidden perspective-[1000px]">
@@ -313,8 +313,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               {NAVIGATION.explore.map((item) => (
                 <li key={item.label} className="w-fit">
-                  <Link href={item.href} className={`inline-block ${underlineHoverClasses}`}>
+                  <Link href={item.href} className={baseLinkClasses}>
                     <span className="relative z-10">{item.label}</span>
+                    {/* The Memorized Navbar Line Effect */}
+                    <div className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 h-px bg-cosmo-ink/60 w-0 group-hover:w-full transition-all duration-500 ease-out" />
                   </Link>
                 </li>
               ))}
@@ -329,8 +331,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               {NAVIGATION.company.map((item) => (
                 <li key={item.label} className="w-fit">
-                  <Link href={item.href} className={`inline-block ${underlineHoverClasses}`}>
+                  <Link href={item.href} className={baseLinkClasses}>
                     <span className="relative z-10">{item.label}</span>
+                    {/* The Memorized Navbar Line Effect */}
+                    <div className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 h-px bg-cosmo-ink/60 w-0 group-hover:w-full transition-all duration-500 ease-out" />
                   </Link>
                 </li>
               ))}
@@ -349,7 +353,7 @@ export default function Footer() {
                     href={item.href}
                     initial="initial"
                     whileHover="hover" 
-                    className={`flex items-center gap-2 ${underlineHoverClasses}`}
+                    className={flexLinkClasses}
                   >
                     <span className="relative z-10">{item.label}</span>
                     <motion.span 
@@ -359,6 +363,8 @@ export default function Footer() {
                     >
                       ↗
                     </motion.span>
+                    {/* The Memorized Navbar Line Effect */}
+                    <div className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 h-px bg-cosmo-ink/60 w-0 group-hover:w-full transition-all duration-500 ease-out" />
                   </motion.a>
                 </li>
               ))}
@@ -373,8 +379,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               {NAVIGATION.legal.map((item) => (
                 <li key={item.label} className="w-fit">
-                  <Link href={item.href} className={`inline-block ${underlineHoverClasses}`}>
+                  <Link href={item.href} className={baseLinkClasses}>
                     <span className="relative z-10">{item.label}</span>
+                    {/* The Memorized Navbar Line Effect */}
+                    <div className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 h-px bg-cosmo-ink/60 w-0 group-hover:w-full transition-all duration-500 ease-out" />
                   </Link>
                 </li>
               ))}

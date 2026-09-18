@@ -38,35 +38,35 @@ const CAPABILITIES = [
     category: "SOFTWARE ENGINEERING",
     description: "Architecting mission-critical, hyper-scalable enterprise platforms. We translate complex business logic into high-yield digital assets, accelerating time-to-market and aggressively driving revenue growth through unmatched technical execution.",
     items: ["Product Architecture", "Core Platforms", "API Ecosystems", "Enterprise Systems"],
-    video: "/SoftwareEngineering.mp4"
+    video: "/SoftwareEngineering.webm"
   },
   {
     id: "intelligence",
     category: "AI & INTELLIGENCE",
     description: "Integrating proprietary machine learning models and cognitive automation to unlock predictive alpha. We eliminate operational friction, compounding efficiency gains and transforming your proprietary data into an insurmountable competitive moat.",
     items: ["AI Infrastructure", "Machine Learning", "LLM Integration", "Workflow Automation"],
-    video: "/Intelligence.mp4"
+    video: "/Intelligence.webm"
   },
   {
     id: "cloud",
     category: "CLOUD & INFRASTRUCTURE",
     description: "Deploying highly resilient, fault-tolerant cloud ecosystems engineered for infinite scale and zero downtime. We optimize dynamic resource allocation to aggressively slash Total Cost of Ownership (TCO) while guaranteeing absolute performance reliability.",
     items: ["Cloud Architecture", "DevOps Pipelines", "Global Scalability", "Cost Optimization"],
-    video: "/Cloud.mp4"
+    video: "/Cloud.webm"
   },
   {
     id: "security",
     category: "SECURITY",
     description: "Implementing proactive, military-grade zero-trust security architectures. We shield critical corporate IP, neutralize asymmetric threats, and ensure absolute operational continuity, mitigating existential enterprise risk in a volatile digital landscape.",
     items: ["Application Security", "Infrastructure Defense", "Risk Mitigation", "Resilience Planning"],
-    video: "/Security.mp4"
+    video: "/Security.webm"
   },
   {
     id: "data",
     category: "DATA",
     description: "Constructing unified, high-velocity data pipelines that synthesize fragmented organizational siloes. We empower executive leadership with real-time, deterministic insights, directly accelerating bottom-line growth and strategic market positioning.",
     items: ["Data Platforms", "Predictive Analytics", "Decision Systems", "BI Architecture"],
-    video: "/Data.mp4"
+    video: "/Data.webm"
   },
 ];
 

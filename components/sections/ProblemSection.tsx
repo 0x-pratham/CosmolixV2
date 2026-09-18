@@ -7,7 +7,7 @@
  * - FIXED: Removed all scrollbars (`overflow-y-auto`) from the expanded modal.
  * - FIXED: Optimized typography sizing, spacing, and padding to ensure all content perfectly fits on-screen without scrolling.
  * - Kept: High-converting B2B agency text.
- * - Kept: Continuous looping videos (.mp4) inside the modal.
+ * - Kept: Continuous looping videos (.webm) inside the modal.
  * - Kept: Cinematic 1.2s Zoom Transition.
  * - Kept: Image margins are razor-thin (inset-1) with Light/Dark Orange background.
  * ---------------------------------------------------------------
@@ -66,7 +66,7 @@ const CHALLENGES: Challenge[] = [
     problem: "Outdated infrastructure doesn't just slow down your engineering—it bleeds revenue. We architect modern, scalable ecosystems that empower your business to move at the speed of the market.",
     impact: ["Sluggish deployment rates", "Exorbitant maintenance costs", "Rigid, inflexible architecture"],
     helps: ["Cloud-Native Migration", "API-First Refactoring", "Automated CI/CD Workflows"],
-    visual: "/LegacySystems.mp4",
+    visual: "/LegacySystems.webm",
     outerVisual: "/card1.jpeg"
   },
   {
@@ -77,7 +77,7 @@ const CHALLENGES: Challenge[] = [
     problem: "Your top talent is drowning in repetitive operational friction. By deploying targeted AI and intelligent scripts, we reclaim thousands of wasted hours, letting your team focus on high-value innovation.",
     impact: ["High human error rates", "Wasted engineering talent", "Operational bottlenecks"],
     helps: ["Custom AI Workflows", "Process Optimization", "Robotic Process Automation"],
-    visual: "/ManualOperations.mp4",
+    visual: "/ManualOperations.webm",
     outerVisual: "/card2.jpeg"
   },
   {
@@ -88,7 +88,7 @@ const CHALLENGES: Challenge[] = [
     problem: "As your digital footprint expands, traditional security boundaries dissolve. We implement robust, military-grade architectures to ensure your sensitive data is protected against sophisticated modern threats.",
     impact: ["Critical data breaches", "Regulatory non-compliance", "Irreparable loss of trust"],
     helps: ["Zero-Trust Architectures", "End-to-End Encryption", "Continuous Compliance Auditing"],
-    visual: "/SecurityGaps.mp4",
+    visual: "/SecurityGaps.webm",
     outerVisual: "/card3.jpeg"
   },
   {
@@ -99,7 +99,7 @@ const CHALLENGES: Challenge[] = [
     problem: "Monolithic systems crumble under exponential growth. We decompose rigid backends into agile, microservice-driven architectures that scale elastically without downtime or performance degradation.",
     impact: ["System outages under load", "Lost transactional revenue", "Severely degraded UX"],
     helps: ["Microservices Decomposition", "Kubernetes Orchestration", "Global Load Balancing"],
-    visual: "/ScalingProblems.mp4",
+    visual: "/ScalingProblems.webm",
     outerVisual: "/card4.jpeg"
   },
   {
@@ -110,7 +110,7 @@ const CHALLENGES: Challenge[] = [
     problem: "Your most valuable asset—data—is trapped in isolated silos. We build centralized, high-velocity data pipelines that feed predictive analytics and machine learning models in real-time.",
     impact: ["Blind strategic decisions", "Stale, retrospective reporting", "Inability to leverage AI"],
     helps: ["Enterprise Data Lakes", "Real-Time Sync Pipelines", "Predictive Analytics Models"],
-    visual: "/DisconnectedData.mp4",
+    visual: "/DisconnectedData.webm",
     outerVisual: "/card5.jpeg"
   },
   {
@@ -121,7 +121,7 @@ const CHALLENGES: Challenge[] = [
     problem: "Brilliant ideas die waiting for engineering bandwidth. Cosmolix provides elite, agile development pods that integrate seamlessly with your team to rapidly prototype and launch your next flagship product.",
     impact: ["Missed market opportunities", "Internal team stagnation", "Competitors outpacing you"],
     helps: ["Rapid MVP Development", "Elite Staff Augmentation", "Agile Engineering Pods"],
-    visual: "/IdeasStuck.mp4",
+    visual: "/IdeasStuck.webm",
     outerVisual: "/card6.jpeg"
   }
 ];

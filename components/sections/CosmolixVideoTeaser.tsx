@@ -301,7 +301,7 @@ const AudioWaveButton = ({ isMuted, onClick }: { isMuted: boolean, onClick: (e: 
 // Main Teaser Component
 // -----------------------------------------------------------
 const CosmolixVideoTeaser = forwardRef<CosmolixVideoTeaserHandle, CosmolixVideoTeaserProps>(
-  function CosmolixVideoTeaser({ videoSrc = '/CosmolixChinematic.mp4', posterSrc, className }, ref) {
+  function CosmolixVideoTeaser({ videoSrc = '/CosmolixChinematic.webm', posterSrc, className }, ref) {
     const sectionRef = useRef<HTMLElement>(null);
     const videoRef = useRef<HTMLVideoElement>(null);
     const wrapperRef = useRef<HTMLDivElement>(null);

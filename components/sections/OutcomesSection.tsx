@@ -49,35 +49,35 @@ const OUTCOMES = [
     title: "BUILD",
     problem: "Organizations often possess transformative, disruptive concepts that languish in the conceptual phase due to a lack of elite engineering execution and strategic technical vision.",
     solution: "We architect and engineer these concepts into market-defining, highly scalable flagship products, leveraging cutting-edge tech stacks to ensure long-term competitive advantage and rapid market penetration.",
-    video: "/Build.mp4"
+    video: "/Build.webm"
   },
   {
     id: "transform",
     title: "TRANSFORM",
     problem: "Technical debt and monolithic legacy infrastructures are severely restricting operational agility, increasing maintenance overhead, and preventing the integration of modern, data-driven capabilities.",
     solution: "We relentlessly modernize and refactor your entire infrastructure, executing seamless cloud migrations and microservices architectures that drastically reduce costs and future-proof your enterprise.",
-    video: "/Transform.mp4"
+    video: "/Transform.webm"
   },
   {
     id: "automate",
     title: "AUTOMATE",
     problem: "Valuable human capital is continuously misallocated toward repetitive, high-volume operational workflows, leading to severe margin erosion, operational bottlenecks, and high error rates.",
     solution: "We deploy sophisticated, AI-driven automation ecosystems and intelligent, zero-touch workflows that eliminate redundancies, hyper-accelerate throughput, and liberate your workforce to focus on strategic growth.",
-    video: "/Automate.mp4"
+    video: "/Automate.webm"
   },
   {
     id: "scale",
     title: "SCALE",
     problem: "Rapid organizational growth and sudden spikes in user demand are overwhelming your current system architecture, resulting in unacceptable latency, service degradation, and lost revenue opportunities.",
     solution: "We engineer hyper-elastic, high-availability, fault-tolerant ecosystems designed for infinite scale, guaranteeing continuous performance optimization and five-nines (99.999%) reliability under maximum load.",
-    video: "/Scale.mp4"
+    video: "/Scale.webm"
   },
   {
     id: "protect",
     title: "PROTECT",
     problem: "In an era of sophisticated, state-sponsored cyber threats, traditional digital perimeters are increasingly porous, leaving sensitive corporate data and intellectual property highly vulnerable to catastrophic breaches.",
     solution: "We implement military-grade, zero-trust security frameworks and advanced cryptographic protocols, creating an impenetrable, proactive defense matrix that neutralizes threats before they materialize.",
-    video: "/Protect.mp4"
+    video: "/Protect.webm"
   },
 ];
 
@@ -244,7 +244,7 @@ export default function OutcomesSection() {
                     className="w-full h-full flex items-center justify-center origin-center"
                   >
                     <video 
-                      src="/StandAlone.mp4" 
+                      src="/StandAlone.webm" 
                       autoPlay 
                       loop 
                       muted 

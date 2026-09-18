@@ -1,0 +1,60 @@
+/* components/preloader/preloader.css */
+
+.pl-root {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-cosmo-ink, #111);
+  color: var(--color-cosmo-paper, #f2eee4);
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  pointer-events: none;
+}
+
+.pl-split-top,
+.pl-split-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color-cosmo-ink, #111);
+  z-index: -1;
+  will-change: transform;
+}
+
+.pl-split-top { top: 0; transform-origin: top; }
+.pl-split-bottom { bottom: 0; transform-origin: bottom; }
+
+.pl-progress-track {
+  width: 100%;
+  height: 1px;
+  background: rgba(242, 238, 228, 0.2);
+  position: relative;
+}
+
+.pl-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--color-cosmo-paper, #f2eee4);
+  /* This custom property is driven by React state */
+  width: calc(var(--pl-progress, 0) * 1%);
+}
+
+/* The single bold accent */
+.pl-progress-head {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 4px;
+  height: 3px;
+  background: var(--color-cosmo-accent, #ff5a00);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pl-split-top, .pl-split-bottom {
+    transition: opacity 0.3s ease;
+  }
+}

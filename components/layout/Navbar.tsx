@@ -133,7 +133,7 @@ export default function Navbar() {
             />
           </div>
 
-          <div data-registration-target className="nav-text-container absolute left-0 flex items-center origin-left text-2xl md:text-3xl leading-none tracking-[0.15em] uppercase text-cosmo-ink font-serif font-bold">
+          <div className="nav-text-container absolute left-0 flex items-center origin-left text-2xl md:text-3xl leading-none tracking-[0.15em] uppercase text-cosmo-ink font-serif font-bold">
             <span>C</span>
             <span 
               className="nav-middle-text overflow-hidden whitespace-nowrap inline-flex" 
